@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <form action="./welcomePage.html">
+        <div class="container">
+            <h1 style="padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px;">Register</h1>
+            <hr>
+
+            <label for="firstName"><b>Name:</b></label>
+            <input type="text" placeholder="Enter Your Name" name="firstName" id="fname" required>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="text" placeholder="Enter Your Email" name="email" id="email" required>
+
+            <label for="password"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="password" id="pass" required>
+
+            <label for="jobTitle"><b>Job Title:</b></label>
+            <input type="text" placeholder="Enter Your Job Title" name="jobTitle" id="title" required>
+
+            <label for="mobile"><b>Mobile Number:</b></label>
+            <input type="text" placeholder="Mobile Number" name="mobileNum" id="mobile" required>
+            
+            <label for="address"><b>Address:</b></label>
+            <input type="text" placeholder="Enter Your Address" name="address" id="address" required>
+            
+            <label for="Gender"><b>Gender: </b></label>
+            <select name="gender" id="gender" class="container dateofbirth">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <hr>
+            <div>
+                <button type="button" onclick="window.location.href='./index.html'" style="margin-left: 0; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; width: 100px; font-size: 20px; font-weight: bold;" class="stopBtn">Back</button>
+                <button type="submit" class="registerbtn" style="font-size: 20px; font-weight: bold;">Register</button>
+            </div>
+            
+        </div>
+    </form>
+</body>
+
+</html>

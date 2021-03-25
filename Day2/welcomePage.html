@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script.js"></script>
+  </head>
+  <body class="container">
+    <script>
+      var str = location.search;
+
+      var nameFirst = str.indexOf("=");
+      var nameLast = str.indexOf("&");
+
+      var emailFirst = str.indexOf("=", nameFirst + 1);
+      var emailLast = str.indexOf("&", nameLast + 1);
+
+      var passFirst = str.indexOf("=", emailFirst + 1);
+      var passLast = str.indexOf("&", emailLast + 1);
+
+      var titleFirst = str.indexOf("=", passFirst + 1);
+      var titleLast = str.indexOf("&", passLast + 1);
+
+      var mobileFirst = str.indexOf("=", titleFirst + 1);
+      var mobileLast = str.indexOf("&", titleLast + 1);
+
+      var addressFirst = str.indexOf("=", mobileFirst + 1);
+      var addressLast = str.indexOf("&", mobileLast + 1);
+
+      var genderFirst = str.indexOf("=", addressFirst + 1);
+
+      document.write("<h4>" + "Welcome, " + str.slice(titleFirst + 1, titleLast) + " " + str.slice(nameFirst + 1, nameLast) + "</h4>" + "<br>");
+      document.write("<h4>" + "Your Address: " + str.slice(addressFirst + 1, addressLast) + "</h4>" + "<br>");
+      document.write("<h4>" + "Your Gender: " + str.slice(genderFirst + 1, str.length) + "</h4>" + "<br>");
+      document.write("<h4>" + "Your Email: " + str.slice(emailFirst + 1, emailLast).replace("%40", "@") + "</h4>" + "<br>");
+      document.write("<h4>" + "Your Mobile: " + str.slice(mobileFirst + 1, mobileLast) + "</h4>" + "<br>");
+    </script>
+            <button type="button" onclick="history.back()" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; width: 100px; font-size: 20px; font-weight: bold;" class="stopBtn">Back</button>
+  </body>
+</html>

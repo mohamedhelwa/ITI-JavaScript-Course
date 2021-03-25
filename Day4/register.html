@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./cookie.js"></script>
+</head>
+    <body>
+        <div class="container">
+            <h1 style="padding: 1px 1px 1px 1px; margin: 1px 1px 1px 1px;">Register</h1>
+            <hr>
+            <div style="margin-left: 40px;">
+                <label for="userName"><b>Enter Your Name:</b></label>
+                <input type="text" placeholder="Your name" name="userName" id="name">
+
+                <label for="userAge"><b>Enter Your Age:</b></label>
+                <input type="text" placeholder="Your age" name="userAge" id="age">
+
+                <label for="userGender"><br><br><b>Select your gender: </b><br><br></label>
+                <input type="radio" name="gender" id="1" value="Male" style="margin-left: 80px;"><img src="./images/1.jpg" alt="male" style="height: 200px;"> 
+                <input type="radio" name="gender" id="2" value="Female" style="margin-left: 120px;"><img src="./images/2.jpg" alt="female" style="height: 200px;">
+        
+                <label for="color"><br><br><b>Select your Favorite Color:</b><br></label>
+                    <select name="favoriteColor" id="color" class="dateofbirth">
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="red">Red</option>
+                    </select>
+                <br>
+            </div>   
+            
+            <hr>
+            <div style="margin-left: 50px;">
+                <button type="button" onclick="window.location.href='./index.html'" style="margin-left: 0; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; width: 100px; font-size: 20px; font-weight: bold;" class="stopBtn">Back</button>
+                <button type="submit" class="registerbtn" style="font-size: 20px; font-weight: bold;" onclick="saveInfo()">Register</button>
+            </div>
+            
+        </div>
+    
+        
+
+  </body>
+</html>

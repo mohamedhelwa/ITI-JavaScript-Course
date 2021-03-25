@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moving Pics</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    
+    <body style="margin-top: 80px; margin-left: 500px;">
+
+        <div style="border: 2px solid red; width: 350px; height: 350px;">
+
+            <img id="1" src="./images/icon1.gif" style="position: relative; left: 0px; top: 140px;">
+            <img id="2" src="./images/icon2.gif" style="position: relative; left: 250px; top: 140px;">
+            <img id="3" src="./images/TOP.JPG"   style="position: relative; top: 296px; left: 55px;">
+
+        </div>
+
+        <input id="btn1" type="button" class="button" style="margin-top: 10px; margin-left: 10px;" value="Go" onclick="startMoving()">
+        <input id="btn2" type="button" class="button" style="margin-top: 10px; margin-left: 25px;" value="Reset" onclick="reset()">
+
+        <script>
+            
+            document.write("<br> <br>" + document.getElementById(1).offsetLeft + "<br>");
+            document.write(document.getElementById(2).offsetLeft);
+
+        </script>
+
+        <br>
+        <button type="button" onclick="window.location.href='./index.html'" style="margin-left: 125px; margin-top: 110px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; width: 100px; font-size: 20px; font-weight: bold;" class="stopBtn">Back</button>
+
+
+        <script>
+            
+        </script>
+    </body>
+</html>

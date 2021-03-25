@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Marbles</title>
+    </head>
+
+    <body style="margin-top: 50px;">
+        <h1 style="margin-left: 50px;">Marbles:</h1>
+        <hr style="margin-left: 50px; margin-right: 50px; margin-bottom: 50px;">
+
+        <div style="width: 700px; margin-top: 100px; margin-left: 30%;">
+            <img onmouseover="stop()" onmouseout="startTimer()" class="marbleImage" src="./images/marble2.jpg">
+            <img onmouseover="stop()" onmouseout="startTimer()" class="marbleImage" src="./images/marble1.jpg">
+            <img onmouseover="stop()" onmouseout="startTimer()" class="marbleImage" src="./images/marble1.jpg">
+            <img onmouseover="stop()" onmouseout="startTimer()" class="marbleImage" src="./images/marble1.jpg">
+            <img onmouseover="stop()" onmouseout="startTimer()" class="marbleImage" src="./images/marble1.jpg">
+        </div>
+            
+        <button type="button" onclick="window.location.href='./index.html'" style="margin-top: 250px; margin-left: 46.5%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; width: 100px; font-size: 20px; font-weight: bold;" class="stopBtn">Back</button>
+        
+        <script>
+            var marbles = document.getElementsByClassName("marbleImage");
+            var interval;
+            var i = marbles.length - 1;
+
+            startTimer();
+
+            function startTimer() {
+                marbles[i].src = "./images/marble1.jpg";
+                i++;
+                if (i >= marbles.length){
+                    i = 0;
+                } 
+                marbles[i].src = "./images/marble2.jpg";
+                interval = setTimeout(startTimer, 500);
+            }
+            function stop() {
+                clearTimeout(interval);
+            }
+        </script>        
+
+    </body>
+</html>

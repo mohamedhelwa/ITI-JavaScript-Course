@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Node</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <style>
+            .center {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="center">
+            <div id="header">
+                <img src="./images/dom.jpg" alt="hello..it rains over here:)" />
+            </div>
+            <div id="navigation">
+                <ul id="nav">
+                    <li><strong>Memo</strong></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- <button type="button" onclick="window.location.href='./index.html'" style="margin-top: 400px; margin-left: 25%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; width: 100px; font-size: 20px; font-weight: bold;" class="stopBtn">Back</button> -->
+    
+        <script>
+             document.getElementById("header").style.textAlign = "right";
+
+            document.getElementById("nav").style.listStyleType = "circle";
+
+        
+            var imageCopy = document.createElement("img");
+            imageCopy.src = "./images/dom.jpg";
+            document.body.appendChild(imageCopy);
+        </script>
+
+
+
+
+         <div>                <!--  this is only for adding a back button  -->
+            <button type="button" onclick="window.location.href='./index.html'" style="margin-top: 20px; margin-left: 48%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; width: 100px; font-size: 20px; font-weight: bold;" class="stopBtn">Back</button>
+        </div>
+    </body>
+</html>

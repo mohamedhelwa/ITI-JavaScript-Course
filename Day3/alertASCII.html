@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alert ASCII Code</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./script.js"></script>
+        
+    </head>
+
+    <body onload="profileDisplay()" style="font-size: 25px; margin-left: 25%; margin-top: 150px;">
+
+        <p>Press any key in the input field below to get it's ASCII Code:</p>
+        <input type="text" size="48" id="input" style="margin-left: 100px;" onkeydown="detectKey(event)">
+        <br>
+        <p id="showingArea" style="margin-left: 230px;"></p>
+        <br>
+        <button type="button" onclick="window.location.href='./index.html'" style="margin-top: 100px; margin-left: 240px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; width: 100px; font-size: 20px; font-weight: bold;" class="stopBtn">Back</button>
+
+    </body>
+</html>
